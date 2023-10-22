@@ -76,7 +76,23 @@ year=2020;
 printf("test case 5:year=%d:",year);
 if(!isLeapYear(year))
 {
- 
+ printf("Failed\n");
+  numFailed=numFailed+1;
+}else{
+  printf("Passed!\n");
+  numPassed=numPassed+1;
+}
+year=1990;
+printf("test case 6:year=%d:",year);
+if(!isLeapYear(year))
+{
+  printf("failed\n");
+  numFailed=numFailed+1;
+}else{
+  printf("Passed!\n");
+  numPassed=numPassed+1;
+
+}
 
   printf("\n\n");
   printf("Summary:\n");
