@@ -77,7 +77,16 @@ else{
   
   
   else if(choice == 6) {
-    //TODO: handle this case (log_a(b))
+
+if (a>0 && b>0){
+  result = log(b)/log(a);
+  printf("log %.2lf / log %.2lf = %.3lf",b,a,result);
+
+}
+
+
+
+   
   } else {
     printf("Please input a valid operator next time");
   }
