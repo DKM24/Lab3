@@ -32,11 +32,21 @@ int main(int argc, char **argv) {
   scanf("%d", &choice);
 
   if(choice == 1) {
+
     printf("%f", a + b);
-  } else if(choice == 2) {
+
+  } 
+  else if(choice == 2) {
+
     result = a - b;
     printf("%f", result);
-  } else if(choice == 3) {
+
+  } 
+  else if(choice == 3) {
+
+    result = a*b;
+    printf("\n%.2f * %.2f = %.2f",a,b,result);
+
     //TODO: handle this case (multiplication)
   } else if(choice == 4) {
     //TODO: handle this case (division)
