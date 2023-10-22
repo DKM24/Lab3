@@ -62,6 +62,22 @@ int main(int argc, char **argv) {
   //TODO: write *at least* 3 more of your own
   //      test cases here, they should all pass!
 
+  year = 2004;
+printf("test case 4 years = %d: ",year);
+if(!isLeapYear(year))
+{
+  printf("failure!\n");
+  numFailed=numFailed+1;
+}else{
+  printf("PASSED!\n");
+  numPassed = numPassed + 1;
+}
+year=2020;
+printf("test case 5:year=%d:",year);
+if(!isLeapYear(year))
+{
+ 
+
   printf("\n\n");
   printf("Summary:\n");
   printf("Number of test cases passed: %d\n", numPassed);
