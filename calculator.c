@@ -47,8 +47,19 @@ int main(int argc, char **argv) {
     result = a*b;
     printf("\n%.2f * %.2f = %.2f",a,b,result);
 
-    //TODO: handle this case (multiplication)
+    
   } else if(choice == 4) {
+
+
+if (b==0){
+  printf("\nERROR. (division by zero is not defined)");
+}
+else{
+  result = a/b;
+  printf("\n%.2f / %.2f = %.2f",a,b,result);
+}
+
+
     //TODO: handle this case (division)
   } else if(choice == 5) {
     //TODO: handle this case (minimum)
