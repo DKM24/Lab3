@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
   else if(choice == 3) {
 
     result = a*b;
-    printf("\n%.2f * %.2f = %.2f",a,b,result);
+    printf("\n%.2lf * %.2lf = %.2lf",a,b,result);
 
     
   } else if(choice == 4) {
@@ -56,14 +56,27 @@ if (b==0){
 }
 else{
   result = a/b;
-  printf("\n%.2f / %.2f = %.2f",a,b,result);
+  printf("\n%.2lf / %.2lf = %.2lf",a,b,result);
 }
 
 
-    //TODO: handle this case (division)
+    
   } else if(choice == 5) {
-    //TODO: handle this case (minimum)
-  } else if(choice == 6) {
+
+if(a>b){
+  printf("  \n%.2lf is minimum ",b);
+}
+else if(a<b){
+  printf("  \n%.2lf is minimum",a);
+}
+else{
+  printf("  \nBoth %.2lf and %.2lf are equal ",a,b);
+}
+
+  } 
+  
+  
+  else if(choice == 6) {
     //TODO: handle this case (log_a(b))
   } else {
     printf("Please input a valid operator next time");
